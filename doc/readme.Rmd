@@ -1,0 +1,26 @@
+---
+title: "Naive Bayes Text"
+output: html_document
+---
+
+This project creates basic examples of text classification using reviews and messages.
+For reviews target is to detect fake reviews and for messages detect spam messages.
+
+The code just implements very basic introduction to Naive Bayes on text given in "Chapter 4: Classification using Naive Bayes" of the book "Machine Learning with R" by Brett Lantz.
+
+
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
+wordcloud(names(classifier2$tables[indOrdDivPrior$ix[indFirst]]), indOrdDivPrior$x[indFirst], 
+          scale=c(3, 0.5),
+          max.words=80, 
+          random.order=FALSE, rot.per=.15, colors=brewer.pal(6,"Dark2"))
+title(sub="Deceptive (discriminant)")
+```
+
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
+wordcloud(names(classifier2$tables[indOrdDivPrior$ix[indLast]]), indOrdDivPrior$x[indLast], 
+          scale=c(1.3, 0.2),
+          max.words=80, 
+          random.order=FALSE, rot.per=.15, colors=brewer.pal(6,"Dark2"))
+title(sub="Truthful (discriminant)")
+```
