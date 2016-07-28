@@ -1,6 +1,8 @@
 ---
 title: "Naive Bayes Text"
-output: md_document
+output:
+  md_document:
+    variant: markdown_github
 ---
 
 This project creates basic examples of text classification using reviews and messages.
