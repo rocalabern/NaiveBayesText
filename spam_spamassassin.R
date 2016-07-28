@@ -7,9 +7,12 @@ library(gmodels)
 # 9349 = 6451 + 500 + 2398
   
 ## Read Data ----
-filesEasyHam <- list.files("./data/spamassassin/easy_ham", pattern="*", full.names=TRUE)
-filesHardHam <- list.files("./data/spamassassin/hard_ham", pattern="*", full.names=TRUE)
-filesSpam <- list.files("./data/spamassassin/spam", pattern="*", full.names=TRUE)
+filesEasyHam <- list.files("./data/spamassassin_sample/easy_ham", pattern="*", full.names=TRUE)
+filesHardHam <- list.files("./data/spamassassin_sample/hard_ham", pattern="*", full.names=TRUE)
+filesSpam <- list.files("./data/spamassassin_sample/spam", pattern="*", full.names=TRUE)
+# filesEasyHam <- list.files("./data/spamassassin/easy_ham", pattern="*", full.names=TRUE)
+# filesHardHam <- list.files("./data/spamassassin/hard_ham", pattern="*", full.names=TRUE)
+# filesSpam <- list.files("./data/spamassassin/spam", pattern="*", full.names=TRUE)
 
 i=1
 df_raw = data.frame(cbind("type", "text"), stringsAsFactors = FALSE)
