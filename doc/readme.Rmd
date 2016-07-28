@@ -1,6 +1,6 @@
 ---
 title: "Naive Bayes Text"
-output: html_document
+output: md_document
 ---
 
 This project creates basic examples of text classification using reviews and messages.
